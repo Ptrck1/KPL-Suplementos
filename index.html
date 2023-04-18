@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<script src="script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title>Cadastre-se para receber o PDF</title>
+  
+  </head>
+  <body>
+    <form action="#" method="post" onsubmit="return validarFormulario()">
+      <h1><center>Cadastro de Usuário</center></h1>
+      <div class="all">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autofocus required style="width: 300px; height: 35px;"/>
+      </div>
+      <div class="all">
+        <label for="sobrenome">Sobrenome:</label>
+        <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required style="width: 300px; height: 35px;"/>
+      </div>
+      <div class="all">
+        <label for="cpf">CPF:</label>
+        <input type="number" id="cpf" name="cpf" placeholder="Digite seu CPF" required style="width: 300px; height: 35px;"/>
+      </div>
+      <div class="all">
+        <label>Sexo:</label>
+        <label for="sexo-m">
+          <input type="radio" id="sexo-m" name="sexo" value="m" /> Masculino
+        </label>
+        <label for="sexo-f">
+          <input type="radio" id="sexo-f" name="sexo" value="f" /> Feminino
+        </label>
+      </div>
+      <div class="all">
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required style="width: 300px; height: 35px;">
+          <option value="" selected disabled>Selecione um estado</option>
+          <option value="AC">Acre</option>
+          <option value="MG">Minas Gerais</option>
+          <option value="SP">São Paulo</option>
+          <option value="AM">Amazonas</option>
+          <option value="BA">Bahia</option>
+          <option value="CE">Ceará</option>
+          <option value="DF">Distrito Federal</option>
+          <option value="ES">Espírito Santo</option>
+        </select>
+      </div>
+      <div class="all">
+        <label for="nascimento">Data de Nascimento:</label>
+        <input type="date" id="nascimento" name="nascimento" required style="width: 300px; height: 35px;"/>
+      </div>
+      <div class="all">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required style="width: 300px; height: 35px;"/>
+      </div>
+      <div class="all">
+        <label for="salario">Salário
+        <input type="range" id="Salário" name="Salário" min="1350" max="7000" oninput="this.form.versalario.value=this.value">
+        <input type="number" name="versalario" min="1350" max="7000" value="1350" oninput="this.form.salario.value=this.value">
+        </label>
+      </div>
+      <div class="all">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" placeholder="Digite seu usuário" required style="width: 300px; height: 35px;" />
+      </div>
+      <div class="all">
+        <label for="senha">Senha:</label>
+        <input type="password" fontid="senha" name="senha" placeholder="Digite sua senha" required style="width: 300px; height: 35px;"/>
+      </div>
+      <div class="all">
+        <label for="opiniao">Opinião:</label>
+        <textarea rows="10" cols="40" maxlength="500" id="opiniao" name="opiniao" maxlength="100" placeholder="Digite sua opnião"></textarea>
+
+      </div>
+      
+      <button onclick="alert('Cadastro enviado com sucesso');"> ENVIAR </button>
+
+
+    
+      
